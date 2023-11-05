@@ -4,38 +4,19 @@
 <link rel="icon" type="image/x-icon" href="https://static.thenounproject.com/png/5650102-200.png"> <!-- icon for webpage -->
 <style>
 .BACK {
-	font-size: calc(23px + 0.390625vw);
+	font-size: calc(25px + 0.390625vw);
 	color: #a5a9b0;
 	text-align: justify;
-	margin-top: 15px;
-  	margin-bottom: 15px;
-  	margin-right: 10px;
-  	margin-left: 10px;
+	margin-top: 12.5px;
+  	margin-bottom: 12.5px;
+  	margin-right: 12.5px;
+  	margin-left: 12.5px;
 }
 
-.image-grid {
-  display: grid;
-  grid-gap: 10px;
+h1 {
+	margin: 12.5px;
+	font-size: calc(45px + 0.390625vw);
 }
-
-.image-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-@media (min-width: 600px) {
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 992px) {
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 
 a {
 	color: #202121;
@@ -52,33 +33,98 @@ a:visited {
 }
 
 a:hover {
+	color: transparent;
 	text-decoration: none;
-	text-shadow:0 0 10px #fff, 0 0 5px #b36bff, 0 0 6px #b36bff, 0 0 7px #b36bff, 0 0 8px #b36bff;
+	text-shadow:0 0 5px #333, 0 0 5px #000, 0 0 8px #000;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	-ms-overflow-style: none;
 }
 
 ul {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-	font-size: calc(20px + 0.390625vw);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+	font-size: calc(25px + 0.390625vw);
 }
+
+li {
+	display: inline;
+	float: left;
+}
+
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	margin: 0 auto;
+	padding: 8px 12.5px;
+	text-decoration: none;
+}
+
+.content {
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+}
+
+.info {
+	overflow-y: scroll;
+	height: 100vh;
+	flex: 40%;
+	
+}
+
+.info img {
+	width: 100%;
+}
+
+.info1 {
+	overflow-y: scroll;
+	height: 100vh;
+	flex: 60%;
+
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+	.flex-container {
+		flex-direction: column;
+}
+
 </style>
 <title>Matt</title>
 </head>
 <font face = "arial">
 <ul>
-  <li><a href="./contact.html">Contact</a>&emsp;<a href="./social.html">Social Media</a></li>
+  <li><a href="./contact.html">Contact</a></li>
+<li><a href="./social.html">Social Media</a></li>
+<li><a href="./mainPage.html">Home</a></li>
 </ul>
-<p class="BACK">
-page one <a href="./mainPage.html"> Back </a>
-</p>
-<div class="image-grid">
-  <img src="images/17.jpg"" alt="Image">
-<p> hello dskjbfskejnfspnfskdn sdlkngf fhgfnndffxgnfnfn
-n fgfnfxgn </p>
+<div class="content flex-container">
+<div class="info1">
+				<h1><br>Distracted by Something,<br>Ignoring the Nothing.</h1>
+	</div>
+	<div class="info">
+<br><br><br>
+<img src="images/17.jpg"><img src="images/17.jpg"><img src="images/17.jpg"><img src="images/17.jpg">
+
+	</div>
 </div>
 </html>
