@@ -1,5 +1,4 @@
 # abbysttn.github.io
-<!DOCTYPE html>
 <html>
 <head>
 <link rel="icon" type="image/x-icon" href="https://static.thenounproject.com/png/5650102-200.png"> <!-- icon for webpage -->
